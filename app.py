@@ -8,7 +8,6 @@ import os
 # os.system('sudo apt update')
 # os.system('sudo apt install ffmpeg')
 
-
 def main_function(FILE_NAME: str):
     movie_segments = f.transcribe(FILE_NAME)
 
@@ -27,7 +26,8 @@ def main_function(FILE_NAME: str):
     return f"{f.get_file_stem(FILE_NAME)}.txt"
     
 st.title("MP3/M4Aファイルの音声を文字起こし")  # ② タイトル表示
-
+os_name = os.name
+st.subheader(f"{os_name}")
 # ファイルの読み込み
 st.subheader("1.MP3/M4Aファイルをアップロードしてください。")
 uploaded_file = st.file_uploader("MP3/MP4ファイル", type=['mp3', 'm4a'] )
