@@ -32,13 +32,13 @@ if uploaded_file is not None :
     audio_data.export("output.mp3", format="mp3")
     FILE_NAME = 'output.mp3'
 
-    transcript_result_file_name = main_function(FILE_NAME)
-    print(transcript_result_file_name)
-    with open(transcript_result_file_name, "r") as f:
-        txt = f.read()
-        st.download_button(
-        label="Download .txt file",
-        data=txt,
-        file_name="result.txt",
-        mime="text/csv",
-        )
+    # transcript_result_file_name = main_function(FILE_NAME)
+    # print(transcript_result_file_name)
+    # with open(transcript_result_file_name, "r") as f:
+    #     txt = f.read()
+    #     st.download_button(
+    #     label="Download .txt file",
+    #     data=txt,
+    #     file_name="result.txt",
+    #     mime="text/csv",
+    #     )
