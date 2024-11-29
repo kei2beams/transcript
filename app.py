@@ -5,7 +5,7 @@ from pydub.playback import play
 import os
 
 # os.system('git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg')
-# os.system('sudo apt update')
+os.system('sudo pacman -S ffmpeg')
 # os.system('sudo apt install ffmpeg')
 
 def main_function(FILE_NAME: str):
