@@ -1,4 +1,4 @@
 future
 streamlit
 pydub
-whisper-openai
+openai-whisper
