@@ -4,9 +4,9 @@ from pydub import AudioSegment
 from pydub.playback import play
 import os
 
-os.system('git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg')
-os.system('sudo apt update')
-os.system('sudo apt install ffmpeg')
+# os.system('git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg')
+# os.system('sudo apt update')
+# os.system('sudo apt install ffmpeg')
 
 
 def main_function(FILE_NAME: str):
@@ -31,9 +31,10 @@ st.title("MP3/M4Aファイルの音声を文字起こし")  # ② タイトル�
 # ファイルの読み込み
 st.subheader("1.MP3/M4Aファイルをアップロードしてください。")
 uploaded_file = st.file_uploader("MP3/MP4ファイル", type=['mp3', 'm4a'] )
-
-if uploaded_file is not None :
-    audio_data = AudioSegment.from_file(uploaded_file)
+st.audio(uploaded_file, format="audio/mpeg", loop=True)
+# print(uploaded_file)
+# if uploaded_file is not None :
+#     audio_data = AudioSegment.from_file(uploaded_file)
     # audio_data.export("output.mp3", format="mp3")
     # FILE_NAME = 'output.mp3'
 
