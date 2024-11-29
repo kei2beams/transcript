@@ -5,6 +5,9 @@ from pydub.playback import play
 import os
 
 os.system('git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg')
+os.system('sudo apt update')
+os.system('sudo apt install ffmpeg')
+
 
 def main_function(FILE_NAME: str):
     movie_segments = f.transcribe(FILE_NAME)
