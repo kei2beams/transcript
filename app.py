@@ -29,8 +29,8 @@ uploaded_file = st.file_uploader("MP3/MP4ファイル", type=['mp3', 'm4a'] )
 
 if uploaded_file is not None :
     audio_data = AudioSegment.from_file(uploaded_file)
-    audio_data.export("output.mp3", format="mp3")
-    FILE_NAME = 'output.mp3'
+    # audio_data.export("output.mp3", format="mp3")
+    # FILE_NAME = 'output.mp3'
 
     # transcript_result_file_name = main_function(FILE_NAME)
     # print(transcript_result_file_name)
