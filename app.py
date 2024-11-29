@@ -38,7 +38,7 @@ if uploaded_file is not None :
     # audio_data.export("output.mp3", format="mp3")
     # FILE_NAME = 'output.mp3'
 
-    transcript_result_file_name = main_function(audio_data)
+    transcript_result_file_name = main_function(uploaded_file)
     with open(transcript_result_file_name, "r") as f:
         txt = f.read()
         st.download_button(
