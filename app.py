@@ -2,7 +2,9 @@ import streamlit as st
 import function as f
 from pydub import AudioSegment
 from pydub.playback import play
+import os
 
+os.system('git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg')
 
 def main_function(FILE_NAME: str):
     movie_segments = f.transcribe(FILE_NAME)
