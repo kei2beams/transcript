@@ -27,8 +27,8 @@ st.title("MP3/M4Aファイルの音声を文字起こし")  # ② タイトル�
 st.subheader("1.MP3/M4Aファイルをアップロードしてください。")
 uploaded_file = st.file_uploader("MP3/MP4ファイル", type=['mp3', 'm4a'] )
 
-if uploaded_file is not None :
-    audio_data = AudioSegment.from_file(uploaded_file)
+# if uploaded_file is not None :
+#     audio_data = AudioSegment.from_file(uploaded_file)
     # audio_data.export("output.mp3", format="mp3")
     # FILE_NAME = 'output.mp3'
 
